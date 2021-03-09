@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+li{
+  list-style: none;
+}
+button,input{
+  font-family: sans-serif;
+  border: none;
+  outline: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+button:active{
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+a{
+  text-decoration: none;
+}

@@ -1,0 +1,115 @@
+
+/* 
+  Container Details
+*/
+.container {
+  padding: 20px 30px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+/* 
+  title details
+*/
+.container h1 {
+  margin-bottom: 20px;
+}
+
+/* 
+  card
+*/
+.container .containerCards > div {
+  width: 100%;
+  max-width: 350px;
+  background: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .1);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  padding: 20px 0;
+}
+
+/* 
+  description product
+*/
+.container .containerCards > div > p {
+  padding: 20px 15px 10px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* 
+  title product
+*/
+.container .containerCards > div h3 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 19px;
+  margin: 40px auto;
+}
+
+/* 
+  responsive
+*/
+.container .containerCards > div button {
+  padding: 13px 30px;
+  font-size: 19px;
+  background: #ee797e;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media (min-width: 800px) {
+  .container .containerCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container .containerCards > div {
+    width: 98%;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container .containerCards {
+    grid-template-columns: 1fr;
+  }
+  .container .containerCards > div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 160px;
+  }
+  .container .containerCards > div > button{
+    width: 40%;
+    padding: 23px;
+    font-size: 25px;
+    margin: auto;
+  }
+
+  .container .containerCards > div > h3{
+    font-size: 30px;
+    margin: 0;
+    text-align: left;
+  }
+  .container .containerCards > div > img {
+    padding: 10px;
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: auto;
+  }
+  .container .containerCards > div > p {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding: 0 50px 0 0;
+    font-size: 19px;
+  }
+}
